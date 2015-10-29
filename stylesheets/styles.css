@@ -264,4 +264,7 @@ footer {
     font-size:12pt;
     color:#444;
   }
+  header {
+    font-size:75%;
+  }
 }

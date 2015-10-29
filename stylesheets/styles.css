@@ -160,6 +160,14 @@ header ul a strong {
   color:#222;
 }
 
+header p {
+  text-align:center;
+}
+
+header h1 {
+  text-align:center;
+}
+
 section {
   width:500px;
   float:right;

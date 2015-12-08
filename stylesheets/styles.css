@@ -208,6 +208,10 @@ footer {
   width:50%;
 }
 
+.onlyprint {
+  display:none;
+}
+
 
 @media print, screen and (max-width: 960px) {
 
@@ -227,10 +231,9 @@ footer {
   }
 
   section {
-    border:1px solid #e5e5e5;
     border-width:1px 0;
-    padding:20px 0;
-    margin:0 0 20px;
+    margin:0;
+    padding-bottom:0;
   }
 
   header a small {
@@ -242,6 +245,8 @@ footer {
     right:50px;
     top:52px;
   }
+  
+  
 }
 
 @media print, screen and (max-width: 720px) {
@@ -278,7 +283,7 @@ footer {
   }
   
   body {
-    padding:0.2in 0.4in 0.4in 0.4in;
+    padding:0.2in 0.4in 0in 0.4in;
     font-size:12pt;
     color:#444;
     font-size:75%;
@@ -290,13 +295,29 @@ footer {
   
   h1, h2, h3, h4, h5, h6 {
     color:#222;
-    margin:3px 0 3px;
+    margin:15px 0 5px;
+#    font-family: Oxygen, "Helvetica Neue", sans-serif;
   }
   
+  h1 {
+    font-size:150%;
+  }
+  
+  h4 {
+    margin: 5px 0 5px;
+  }
+  
+  .dontprint {
+    display:none;
+  }
+  
+  .onlyprint {
+    display:block;
+  }
   
   .pagebreak {
     page-break-before: always;
-    padding: 1in 0 0 0;
+    padding: 0.2in 0 0 0;
   }
   
 }
